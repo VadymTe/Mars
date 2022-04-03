@@ -1,0 +1,113 @@
+@charset "UTF-8" ;
+body {
+margin: 0;
+padding: 0;
+cursor:  url('../img/cur.png'), pointer ; 
+}
+header {
+	position: relative;
+	width: 100%;
+	height: 1000px;
+	background: url( '../img/planety.jpg' );
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+   }
+   .mars {position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+ }  
+ header h2 { 
+	 margin: 0;
+	 padding: 0;
+	 position: relative;
+	 top: 100px;
+	 left: 520px;
+	 font-size: 6em;
+	 color: rgba(197, 199, 62, 0.5);
+	 text-align: center;
+	 font-weight: 300;
+	 text-shadow: 1px 0px 5px white;
+	 animation: anim 1s linear infinite;
+ }
+@keyframes anim {
+	0% {text-shadow: 1px 0px 6px white; }
+	20% {text-shadow: 2px 0px 7px white; }
+	20% {text-shadow: 3px 0px 8px white; }
+	60% {text-shadow: -1px 0px 7px white; }
+	60% {text-shadow: -2px 0px 7px white; }
+	100% {text-shadow: 1px 0px 6px white; }
+}
+section {
+	padding: 50px 100px;
+	position: relative;
+	background: url( '../img/mars3.jpg' );
+	background-size: cover;
+	height: 950px;
+}
+section p {
+	color: aliceblue;
+	font-size: 20px;
+	line-height: 30px;
+	margin: 0;
+	 padding: 35px;
+	 border: 1px solid black ;
+	 border-radius: 54px;
+background: rgb(12, 13, 78);  
+cursor: none;}
+
+.rocket {
+position: relative;
+left: -340px;
+width: 14%;
+bottom: -100px;
+animation: animroc 16s linear infinite;
+
+}
+@keyframes   animroc {
+	0%{transform:translate(0,0);} 60%, 100%
+	{transform: translate(2200px,-550px);
+
+	}
+}
+.rocket2 {
+	position: relative;
+	left: 550px;
+	bottom: -400px;
+    width: 20%;
+	
+}
+.rocket2:hover {
+	animation: elon 60s linear 0.7s;}
+	@keyframes elon {
+	0%{transform:translate(0,0);} 20%, 100%
+	{transform: translate(0,-1950px);
+	}
+}
+div {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1000px;
+	 background: url( '../img/eee6.png' );
+	animation: animt 50s linear infinite;
+
+}
+@keyframes	 animt {
+	0%{ background-position: 0px;}
+	100% { background-position: 5440px;}
+}
+
+.footer {
+	padding: 55px 0;
+	background: #164d7a;
+	text-align: center;
+}
+
+.credits {
+	color: #ecf3f8;
+	font-size: 14px;
+	margin: 0;
+}
